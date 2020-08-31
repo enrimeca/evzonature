@@ -2,12 +2,12 @@ import React from 'react'
 import { useRouter } from 'next/router'
 
 const ProductItem = () => {
-    const { query: { productId } } = useRouter()
+    const { query } = useRouter()
 
     return (
-        <div>
-            ESta es la página del producto : { productId }
-        </div>
+        <section>
+            <h1>Página producto : { query.id }</h1>
+        </section>
     )
 }
 
