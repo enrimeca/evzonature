@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Navbar from '../components/Navbar/Navbar'
+// import Navbar from '../components/Navbar/Navbar'
 
 const HomePage = () => {
 
@@ -16,8 +16,7 @@ const HomePage = () => {
 
     return (
         <div>
-            <Navbar />
-            <div>Tienda Ecológica</div>
+            <div>Tienda Ecológica EVZONATURE</div>
             {productList.map((product) => (
                 <div>{product.image}</div>
             ))}

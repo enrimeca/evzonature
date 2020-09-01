@@ -1,11 +1,10 @@
 import React from 'react'
-import Navbar from '../../components/Navbar/Navbar'
+// import Navbar from '../../components/Navbar/Navbar'
 
 const AboutPage = () => {
     return (
         <section>
-            <Navbar />
-            <h1>Tienda ecológica EVZONATURE</h1>
+            <h1>Acerca de</h1>
         </section>           
     )
 }
