@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Navbar from '@components/Navbar/Navbar'
 
-const Layout: React.FC = ({ children }) => {
+type LayoutProps ={
+    children?: React.ReactNode
+}
+
+const Layout = ({ children }: LayoutProps) => {
     return (
-        <div>
+        <Fragment>
             <Navbar />
             {children}
             <footer>This is the footer</footer>
@@ -14,7 +18,7 @@ const Layout: React.FC = ({ children }) => {
                     }
                 `}
             </style>
-        </div>
+        </Fragment>
     )
 }
 

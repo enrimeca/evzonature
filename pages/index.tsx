@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
-// import Navbar from '../components/Navbar/Navbar'
+
+import Layout from '@components/Layout/Layout'
+import ProductList from '@components/ProductList/ProductList'
 
 const HomePage = () => {
 
@@ -15,12 +17,9 @@ const HomePage = () => {
     }, [])
 
     return (
-        <div>
-            <div>Tienda Ecológica EVZONATURE</div>
-            {productList.map((product) => (
-                <div>{product.image}</div>
-            ))}
-        </div>
+        <Layout>
+            <ProductList products={productList} />
+        </Layout>
     )
 }
 
