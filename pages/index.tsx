@@ -3,18 +3,19 @@ import React, { useState, useEffect } from 'react'
 import Layout from '@components/Layout/Layout'
 import ProductList from '@components/ProductList/ProductList'
 
-const HomePage = () => {
+export const getServerSideProps = async () => {
+    const response = await fetch('https://evzonature.vercel.app/api/evzo')
+    const { data }:TAPIAvoResponse = await response.json()
 
-    const [productList, setProductList] = useState<TProduct[]>([])
+    return {
+        props: {
+            productList: data,     
+        }
+    }
+}
 
-    useEffect(() => {
-        window
-            .fetch('/api/evzo')
-            .then((response) => response.json())
-            .then(({ data, length }) => {
-                setProductList(data)
-            })
-    }, [])
+
+const HomePage = ({ productList }:{ productList: TProduct[] }) => {
 
     return (
         <Layout>

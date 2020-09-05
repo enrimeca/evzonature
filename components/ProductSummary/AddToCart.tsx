@@ -5,11 +5,9 @@ type AddToCartProps = {
   product: TProduct
 }
 
-// Fake a server Response, we don't care on this project
-// about data persistency, but you may add it :)
 const addToCartRequest = () =>
   new Promise((resolve, reject) => {
-    window.setTimeout(resolve, 600)
+    window.setTimeout(resolve, 100)
   })
 
 const validate = (quantity: number) => {
@@ -20,7 +18,6 @@ const validate = (quantity: number) => {
 }
 
 const AddToCart = ({ product }: AddToCartProps) => {
-  console.log('AddToCart product: ', product)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [quantity, setQuantity] = useState(1)
@@ -30,15 +27,13 @@ const AddToCart = ({ product }: AddToCartProps) => {
   const toggleMessage = () => {
     setTimeout(() => {
       setVisible(false)
-    }, 1000)
+    }, 100)
   }
 
   const handleSubmit = async (e: React.FormEvent) =>{
     e.preventDefault()
     const error = validate(quantity)
     setError(error)
-
-    console.log('quantity',quantity)
 
     if (!error) {
       setLoading(true)

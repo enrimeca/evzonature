@@ -88,12 +88,9 @@ function cartReducers(
 
 const getCartSubTotal = (sum: number, item: CartItemType) => {
   sum += item.price * item.quantity
-  console.log('getCartSubTotal : ', sum)
   return sum
 }
 const getCartCount = (sum: number, item: CartItemType) => sum + item.quantity
-  console.log('getCartCount : ', getCartCount)
-
 
 export const useCart = () => {
   const itemsById = useContext(CartItemsContext)

@@ -26,7 +26,6 @@ const CartItemList = ({
 
   const mapCartItemsToItems = (items: CartItemType[]) =>
     items.map((cartItem) => {
-      console.log('carItem : ', items)
       const { id, name, quantity, price, image, } = cartItem
 
       return ( 
