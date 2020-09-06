@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Layout from '@components/Layout/Layout'
 import ProductList from '@components/ProductList/ProductList'
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
     const response = await fetch('https://evzonature.vercel.app/api/evzo')
     const { data }:TAPIAvoResponse = await response.json()
 
