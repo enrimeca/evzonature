@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import Navbar from '@components/Navbar/Navbar'
+import Footer from '@components/Footer/Footer'
 
 type LayoutProps ={
     children?: React.ReactNode
@@ -10,14 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
         <Fragment>
             <Navbar />
             {children}
-            <footer>This is the footer</footer>
-            <style jsx>
-                {`
-                    footer {
-                        background: salmon;
-                    }
-                `}
-            </style>
+            <Footer />
         </Fragment>
     )
 }

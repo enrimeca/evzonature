@@ -14,7 +14,6 @@ export const getServerSideProps = async () => {
     }
 }
 
-
 const HomePage = ({ productList }:{ productList: TProduct[] }) => {
 
     return (
