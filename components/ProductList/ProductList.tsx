@@ -23,11 +23,15 @@ const mapProductsToCards = (products: TProduct[]) =>
   ))
 
 const ProductList = ({ products }: ProductListProps) => (
-  <div className="container">
+  <div className="container pb-4">
     <div className="row">
-      <div className="col text-center my-4">
-        <h1 className="text-success">EVZONATURE</h1>
-        <h4>Tienda ecológica</h4>
+      <div className="col text-center mt-4">
+        <h1 className="text-success">EVZONATURE</h1>        
+      </div>
+    </div>
+    <div className="row">
+      <div className="col text-center mb-4">
+        <h4>Tienda Ecológica</h4>        
       </div>
     </div>
     <div className="row">      
