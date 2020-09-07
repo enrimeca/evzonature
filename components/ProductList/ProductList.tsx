@@ -23,20 +23,32 @@ const mapProductsToCards = (products: TProduct[]) =>
   ))
 
 const ProductList = ({ products }: ProductListProps) => (
-  <div className="container pb-4">
+  <div className="container pb-4 section-inner">
     <div className="row">
-      <div className="col text-center mt-4">
+      <div className="col text-center mt-1">
         <h1 className="text-success">EVZONATURE</h1>        
       </div>
     </div>
     <div className="row">
-      <div className="col text-center mb-4">
+      <div className="col text-center mb-2">
         <h4>Tienda Ecológica</h4>        
       </div>
     </div>
     <div className="row">      
         {mapProductsToCards(products)}       
     </div>
+    <style jsx>
+      {`
+        .section-inner {
+          padding: 50px;
+        }
+        @media(max-width: 576px){
+          .section-inner {
+            padding: 25px;
+          }
+        }
+      `}
+    </style>
   </div>
 )
 
