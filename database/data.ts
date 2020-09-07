@@ -125,6 +125,48 @@ const data: Record<TProductId, TProduct> = {
         taste: 'Splendid, is an avocado',
       },
     },
+    e247174b: {
+      name: 'Peine de Bambú',
+      id: 'e247174b',
+      sku: 'MW79ZZ7Y',
+      price: 24.00,
+      image: '/images/peine.jpg',
+      attributes: {
+        description:
+          'Peine de bambú con base de goma y cerdas de Bambú.  Controla el frizz y masajea el cuero cabelludo estimulando la circulación, así promueve el rápido crecimiento del cabello y mejora su calidad.',
+        shape: 'Pear',
+        hardiness: '-5 °C',
+        taste: 'Splendid, is an avocado',
+      },
+    },
+    fde84876: {
+      name: 'USB de Bambú 32 Gb',
+      id: 'fde84876',
+      sku: 'MW79ZZ8Y',
+      price: 30.00,
+      image: '/images/usb.jpg',
+      attributes: {
+        description:
+          'USB de bambu 32 Gb en forma de hoja, metal y vidrio.',
+        shape: 'Pear',
+        hardiness: '-5 °C',
+        taste: 'Splendid, is an avocado',
+      },
+    },
+    s30f1f12: {
+      name: 'Torre Colapso',
+      id: 's30f1f12',
+      sku: 'MW79ZZ9Y',
+      price: 48.00,
+      image: '/images/torre.jpg',
+      attributes: {
+        description:
+          'Juego de apilamiento de madera para padres e hijos.  El juego consiste en armar la torre para luego lanzar el dado e ir retirando una torre pequeña de acuerdo al color que te arrojo el dado.',
+        shape: 'Pear',
+        hardiness: '-5 °C',
+        taste: 'Splendid, is an avocado',
+      },
+    },
   }
   
   export default data
